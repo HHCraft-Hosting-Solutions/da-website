@@ -1,0 +1,16 @@
+@font-face{
+	font-family: 'exoblack';
+	src: url('fonts/exo-black-webfont.eot');
+	src: url('fonts/exo-black-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/exo-black-webfont.woff') format('woff'),
+		url('fonts/exo-black-webfont.ttf') format('truetype'),
+		url('fonts/exo-black-webfont.svg#webfont') format('svg');
+}
+@font-face{
+	font-family: 'exodemibold';
+	src: url('fonts/exo-demibold-webfont.eot');
+		src: url('fonts/exo-demibold-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/exo-demibold-webfont.woff') format('woff'),
+		url('fonts/exo-demibold-webfont.ttf') format('truetype'),
+		url('fonts/exo-demibold-webfont.svg#webfont') format('svg');
+}
