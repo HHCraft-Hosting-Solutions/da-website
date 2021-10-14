@@ -6,9 +6,12 @@
 	<link rel="shortcut icon" href="favicon.gif" />
 	<link href="fontstyle.css" type="text/css" rel="stylesheet" charset="utf-8"/>
 	<link href="cssstyle.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	
 </head>
-<body>
+<body style="overflow: hidden">
+	<div id="screensaver"><center></br>Screensaver</center></div>
+	<div id="fishies"></div>
 	<div id="header">
 		<h3>HHCraft Hosting Solutions</h3>
 	</div>
@@ -22,7 +25,26 @@
 		<p><a href="oldsite/">Old website</a></p>
 	</div>
 	<div id="footer">
-		<h3>HHCraft Hosting Solutions © 2013</h3>
+		<h3>HHCraft Hosting Solutions ï¿½ 2013</h3>
 	</div>
+	<script>
+	//screensaver
+
+	document.onmousemove = resetTimer;
+	window.onload = function() {
+		screenTimer = setTimeout(inactive, 10000);
+	}
+	function inactive(){
+		// screen saver goes here
+		$('#screensaver').animate({opacity:.75});
+	}
+	function resetTimer(e) {
+		// undo screen saver here
+		$('#screensaver').animate({opacity:0});
+		// reset timer
+		clearTimeout(screenTimer);
+		screenTimer = setTimeout(inactive, 10000);
+	}
+	</script>
 </body>
 </html>
